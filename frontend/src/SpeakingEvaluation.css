@@ -1,0 +1,140 @@
+/* Tổng thể */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.text-card {
+  width: 100%;
+  height: 338px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 2px solid #007bff;
+}
+
+.text-input {
+  width: 100%;
+  height: 240px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+/* Bố cục ngang giữa upload và kết quả */
+.content {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    gap: 20px;
+}
+
+/* Card chung */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Phần upload file (1 phần) */
+.upload-card {
+    flex: 1;
+    border: 2px solid #007bff;
+    min-width: 250px;
+}
+
+/* Phần kết quả (2 phần) */
+.result-card {
+    flex: 3;
+    /* border-left: 3px solid #007bff; */
+    border: 2px solid #007bff;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Nút chọn file */
+.upload-box {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    color: #007bff;
+    box-sizing: border-box;
+}
+
+.upload-box:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Ẩn input file mặc định */
+.hidden {
+    display: none;
+}
+
+/* Hiển thị tên file */
+.file-name {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Nút tải lên */
+.btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Kết quả */
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Thanh tiến trình */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.5s ease-in-out;
+}
